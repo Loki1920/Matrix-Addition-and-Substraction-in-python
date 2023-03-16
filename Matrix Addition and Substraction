@@ -1,0 +1,52 @@
+# Matrix addition and substraction 
+
+r = int(input("enter no of row :"))
+c = int(input("enter no of col :"))
+
+matrix1 = [[int(input()) for i in range(c)] for j in range(r)]
+
+
+for i in range(r):
+    for j in range(c):
+        print(format(matrix1[i][j],'<3'),end='')
+    print()
+    
+matrix2 = [[int(input()) for i in range(c)] for j in range(r)]
+
+
+for i in range(r):
+    for j in range(c):
+        print(format(matrix1[i][j],'<3'),end='')
+    print() 
+    
+
+result = [[0 for i in range(c)] for j in range(r)]
+
+
+for i in range(r):
+    for j in range(c):
+        result[i][j] = matrix1[i][j] + matrix2[i][j]
+    print()
+    
+print("result addition :")   
+for i in range(r):
+    for j in range(c):
+        print(format(result[i][j],'<3'),end='')
+    print()
+
+# code for substraction   
+resultSub = [[0 for i in range(c)] for j in range(r)]  
+
+print("result substraction :")
+for i in range(r):
+    for j in range(c):
+        resultSub[i][j] = matrix1[i][j] - matrix2[i][j]
+    print()
+for i in range(r):
+    for j in range(c):
+        print(format(resultSub[i][j],'<3'),end='')
+    print()
+    
+
+    
+    
